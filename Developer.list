@@ -28,6 +28,9 @@ DOMAIN-SUFFIX,jetbrains.net
 DOMAIN-SUFFIX,jetbrains.space
 DOMAIN-SUFFIX,intellij.net
 DOMAIN-SUFFIX,kotlinlang.org
+DOMAIN,download.jetbrains.com
+DOMAIN,download-cdn.jetbrains.com
+DOMAIN,plugins.jetbrains.com
 
 # > Microsoft VS Code & Dev
 DOMAIN-SUFFIX,vscode.dev
@@ -81,13 +84,12 @@ DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,netlify.com
 DOMAIN-SUFFIX,heroku.com
 
-# > Homebrew (Mac 必备)
+# > 脚本与工具, Homebrew (Mac 必备)
 DOMAIN-SUFFIX,brew.sh
+DOMAIN-SUFFIX,boxjs.com
+DOMAIN-SUFFIX,formulae.brew.sh
 
 # > 其他开发常用
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,linux.org
 
 # ==========================================
@@ -109,6 +111,4 @@ DOMAIN-KEYWORD,npmjs
 DOMAIN-KEYWORD,pypi
 DOMAIN-KEYWORD,golang
 DOMAIN-KEYWORD,tensorflow
-DOMAIN-KEYWORD,huggingface
-DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,copilot
