@@ -1,0 +1,114 @@
+# ---------------------------------------------------
+# RuleSet: Developer Tools (中国大陆开发者专用 - 增强版)
+# 包含：GitHub, GitLab, JetBrains, Docker, VS Code, NPM, etc.
+# ---------------------------------------------------
+
+# ==========================================
+# 1. 精准后缀匹配 (DOMAIN-SUFFIX)
+# ==========================================
+
+# > GitHub 全家桶 (必须走代理以保持 Session 稳定)
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,git.io
+DOMAIN-SUFFIX,ghcr.io
+
+# > Git 其他服务
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,gitlab.io
+DOMAIN-SUFFIX,bitbucket.org
+DOMAIN-SUFFIX,git-scm.com
+
+# > JetBrains (IDE 下载, 插件, Copilot 鉴权)
+DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,jetbrains.net
+DOMAIN-SUFFIX,jetbrains.space
+DOMAIN-SUFFIX,intellij.net
+DOMAIN-SUFFIX,kotlinlang.org
+
+# > Microsoft VS Code & Dev
+DOMAIN-SUFFIX,vscode.dev
+DOMAIN-SUFFIX,vscode-cdn.net
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,vsassets.io
+DOMAIN-SUFFIX,azure.microsoft.com
+
+# > Docker & Kubernetes (国内镜像站经常挂，建议走代理)
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,hub.docker.com
+DOMAIN-SUFFIX,quay.io
+DOMAIN-SUFFIX,k8s.io
+DOMAIN-SUFFIX,kubernetes.io
+DOMAIN-SUFFIX,gcr.io
+
+# > 问答与社区 (Stack Overflow 极其重要)
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,sstatic.net
+DOMAIN-SUFFIX,superuser.com
+DOMAIN-SUFFIX,serverfault.com
+DOMAIN-SUFFIX,stackexchange.com
+DOMAIN-SUFFIX,dev.to
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,medium.com
+
+# > 包管理器与语言官方站 (加速依赖下载)
+# Node.js / NPM
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,nodejs.org
+DOMAIN-SUFFIX,yarnpkg.com
+# Python
+DOMAIN-SUFFIX,python.org
+DOMAIN-SUFFIX,pypi.org
+DOMAIN-SUFFIX,pythonhosted.org
+# Go / Rust / Android
+DOMAIN-SUFFIX,golang.org
+DOMAIN-SUFFIX,go.dev
+DOMAIN-SUFFIX,rust-lang.org
+DOMAIN-SUFFIX,crates.io
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,googlesource.com
+DOMAIN-SUFFIX,flutter.dev
+
+# > CI/CD & Cloud Hosts
+DOMAIN-SUFFIX,travis-ci.org
+DOMAIN-SUFFIX,travis-ci.com
+DOMAIN-SUFFIX,circleci.com
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,netlify.com
+DOMAIN-SUFFIX,heroku.com
+
+# > Homebrew (Mac 必备)
+DOMAIN-SUFFIX,brew.sh
+
+# > 其他开发常用
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,linux.org
+
+# ==========================================
+# 2. 强力兜底关键字 (DOMAIN-KEYWORD)
+# 作用：只要域名中包含这些词，统统走代理。
+# 注意：已剔除 "git", "go", "hub" 等易误杀短词。
+# ==========================================
+
+DOMAIN-KEYWORD,github
+DOMAIN-KEYWORD,gitlab
+DOMAIN-KEYWORD,jetbrains
+DOMAIN-KEYWORD,pop-os
+DOMAIN-KEYWORD,vscode
+DOMAIN-KEYWORD,visualstudio
+DOMAIN-KEYWORD,docker
+DOMAIN-KEYWORD,kubernetes
+DOMAIN-KEYWORD,stackoverflow
+DOMAIN-KEYWORD,npmjs
+DOMAIN-KEYWORD,pypi
+DOMAIN-KEYWORD,golang
+DOMAIN-KEYWORD,tensorflow
+DOMAIN-KEYWORD,huggingface
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,copilot
